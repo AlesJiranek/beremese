@@ -1,0 +1,21 @@
+{
+  "name": "beremese",
+  "version": "1.0.0",
+  "description": "Wedding web site",
+  "main": "index.js",
+  "repository": "https://github.com/AlesJiranek/beremese.git",
+  "author": "Aleš Jiránek",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "next": "^3.2.2",
+    "react": "15",
+    "react-dom": "15"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {}
+}
