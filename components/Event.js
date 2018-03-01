@@ -1,9 +1,12 @@
-import React from 'react';
-import ScrollAnimation from '../lib/ScrollAnimation';
-
+import React from "react";
+import ScrollAnimation from "../lib/ScrollAnimation";
 
 const Event = () => (
-  <div id="fh5co-event" className="fh5co-bg" style={{ backgroundImage: 'url(/static/images/img_bg_3.jpg)' }}>
+  <div
+    id="fh5co-event"
+    className="fh5co-bg"
+    style={{ backgroundImage: "url(/static/images/img_bg_3.jpg)" }}
+  >
     <div className="overlay" />
     <div className="container">
       <div className="row">
@@ -12,8 +15,8 @@ const Event = () => (
           animateOnce
           className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
         >
-          <span>Our Special Events</span>
-          <h2>Wedding Events</h2>
+          <span>Náš svatební den</span>
+          <h2>Nejdůležitejší události dne</h2>
         </ScrollAnimation>
       </div>
       <div className="row">
@@ -26,18 +29,23 @@ const Event = () => (
                   animateOnce
                   className="event-wrap animate-box"
                 >
-                  <h3>Main Ceremony</h3>
+                  <h3>Svatební Obřad</h3>
                   <div className="event-col">
                     <i className="icon-clock" />
                     <span>13:00</span>
-                    <span>15:00</span>
+                    <span>14:00</span>
                   </div>
                   <div className="event-col">
                     <i className="icon-calendar" />
-                    <span>Sobota 16.</span>
-                    <span>Červen, 2018</span>
+                    <span>Sobota</span>
+                    <span>16. Červen</span>
                   </div>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                  <p>
+                    To nejdůležitější, a vlastně důvod našeho setkání, je říci
+                    si své ano! Obřad proběhne<br />ve 13 hodin v blízkosti
+                    mlýna, ve kterém bude poté i svatební oslava. Netřeba tak
+                    velkého přesouvání, všude dojdeme po svých.
+                  </p>
                 </ScrollAnimation>
               </div>
               <div className="col-md-6 col-sm-6 text-center">
@@ -46,18 +54,23 @@ const Event = () => (
                   animateOnce
                   className="event-wrap animate-box"
                 >
-                  <h3>Wedding Party</h3>
+                  <h3>Svatební oslava</h3>
                   <div className="event-col">
                     <i className="icon-clock" />
                     <span>17:00</span>
-                    <span>22:00</span>
+                    <span>00:00</span>
                   </div>
                   <div className="event-col">
                     <i className="icon-calendar" />
-                    <span>Sobota 16.</span>
-                    <span>Červen, 2018</span>
+                    <span>Sobota</span>
+                    <span>16. Červen</span>
                   </div>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                  <p>
+                    Aby naše láska trvala věčnost, chtěli bychom se s vámi
+                    veselit po zbytek celého dne tak, aby se na náš den navždy
+                    vzpomínalo! Párty bude zahájena v 17 hodin naším prvním
+                    tancem a pak už se jen bude pít a hodovat.
+                  </p>
                 </ScrollAnimation>
               </div>
             </div>

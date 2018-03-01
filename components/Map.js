@@ -1,69 +1,159 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Loader from '../components/Loader';
 
+import {
+  DirectionsRenderer,
+  GoogleMap,
+  InfoWindow,
+  Marker,
+  withGoogleMap,
+  withScriptjs
+} from 'react-google-maps';
 
-class Map extends React.PureComponent {
+class Map extends React.Component {
+  static contextTypes = {
+    __SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: PropTypes.object.isRequired
+  };
 
-  componentDidMount() {
-    const s1 = document.createElement('script');
-    const s0 = document.getElementsByTagName('script')[0];
-    s1.src = 'https://api.mapy.cz/loader.js';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
+  constructor(props) {
+    super(props);
+    this.state = {
+      place: null,
+      showInfoWindow: false,
+      directions: null,
+      planingRoute: false
+    };
+    this.toggleInfoWindow = this.toggleInfoWindow.bind(this);
+    this.planRoute = this.planRoute.bind(this);
+  }
 
-    if (s1.readyState) {  //IE
-      s1.onreadystatechange = () => {
-        if ( s1.readyState === "loaded" || s1.readyState === "complete" ) {
-          s1.onreadystatechange = null;
-          this.loadMap();
+  componentWillMount() {
+    this.map_ = this.context.__SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    this.getPlace();
+  }
+
+  getPlace() {
+    const places = new google.maps.places.PlacesService(this.map_);
+    places.getDetails(
+      { placeId: 'ChIJ4WB081NpC0cRAlr2KwjZTAA' },
+      (place, status) => {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+          this.setState(state => ({ ...state, place }));
         }
-      };
-    } else {  //Others
-      s1.onload = () => {
-        this.loadMap();
-      };
-    }
-    s0.parentNode.insertBefore(s1, s0);
+      }
+    );
   }
 
-
-  createMap() {
-    const center = SMap.Coords.fromWGS84(14.1906017, 49.5524336);
-    const map = new SMap(JAK.gel("map"), center, 16);
-    map.addDefaultLayer(SMap.DEF_BASE).enable();
-    const mouse = new SMap.Control.Mouse(SMap.MOUSE_PAN | SMap.MOUSE_ZOOM);
-    map.addControl(mouse);
-    const zoom = new SMap.Control.Zoom({}, {showZoomMenu: false});
-    map.addControl(zoom);
-    this.createMarker(map);
+  toggleInfoWindow() {
+    this.setState(state => ({
+      ...state,
+      showInfoWindow: !state.showInfoWindow
+    }));
   }
 
+  planRoute() {
+    this.setState(state => ({ ...state, planingRoute: true }));
 
-  createMarker(map) {
-    const position = SMap.Coords.fromWGS84(14.1906017, 49.5524336);
-    const layer = new SMap.Layer.Marker();
-    map.addLayer(layer);
-    layer.enable();
-
-    const options = {};
-    const marker = new SMap.Marker(position, "Mlýn");
-    layer.addMarker(marker);
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        const directionsService = new google.maps.DirectionsService();
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        const startPosition = {
+          lat: latitude,
+          lng: longitude
+        };
+        directionsService.route(
+          {
+            origin: startPosition,
+            destination: this.state.place.geometry.location,
+            travelMode: 'DRIVING'
+          },
+          (directions, status) => {
+            if (status === google.maps.DirectionsStatus.OK) {
+              this.setState(state => ({
+                ...state,
+                directions,
+                planingRoute: false
+              }));
+            } else {
+              window.alert('Directions request failed due to ' + status);
+            }
+          }
+        );
+      },
+      error => {
+        window.alert('Nepodařilo se zjistit vaší pozici.');
+      }
+    );
   }
-
-
-
-  loadMap() {
-    Loader.async = true;
-    Loader.load(null, null, this.createMap.bind(this));
-  }
-
 
   render() {
+    const { place, showInfoWindow, directions, planingRoute } = this.state;
     return (
-      <div id="fh5co-map">
-        <div id="map" />
-      </div>
+      <GoogleMap
+        defaultZoom={13}
+        defaultCenter={{ lat: 49.5659141, lng: 14.1788348 }}
+        options={{ scrollwheel: false }}
+      >
+        {place && (
+          <Marker
+            defaultIcon="/static/images/marker.png"
+            position={place.geometry.location}
+            title={place.name}
+            onClick={this.toggleInfoWindow}
+          >
+            {showInfoWindow && (
+              <InfoWindow>
+                <div style={{ maxWidth: 200 }}>
+                  <h5>{place.name}</h5>
+                  <address>{place.formatted_address}</address>
+                  {navigator.geolocation && (
+                    <button
+                      className="btn btn-default btn-xs"
+                      disabled={planingRoute}
+                      onClick={this.planRoute}
+                    >
+                      Naplánovat trasu {planingRoute && <Loader />}
+                    </button>
+                  )}
+                </div>
+              </InfoWindow>
+            )}
+          </Marker>
+        )}
+
+        {directions && (
+          <DirectionsRenderer
+            directions={directions}
+            options={{
+              suppressMarkers: true
+            }}
+          />
+        )}
+      </GoogleMap>
     );
   }
 }
 
-export default Map;
+const WrappedMap = withScriptjs(withGoogleMap(Map));
+
+export default () => (
+  <WrappedMap
+    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&libraries=places"
+    loadingElement={<div style={{ height: `500px` }} className="loader" />}
+    containerElement={
+      <div
+        id="fh5co-map"
+        style={{
+          width: '100%',
+          height: `500px`,
+          overflow: 'hidden',
+          position: 'relative'
+        }}
+      />
+    }
+    mapElement={<div id="map" style={{ height: `500px` }} />}
+  />
+);

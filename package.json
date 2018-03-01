@@ -11,7 +11,8 @@
     "next": "^4.0.1",
     "react": "16.0.0",
     "react-animate-on-scroll": "^1.6.0",
-    "react-dom": "16.0.0"
+    "react-dom": "16.0.0",
+    "react-google-maps": "^9.4.5"
   },
   "scripts": {
     "dev": "next",
