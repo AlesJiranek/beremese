@@ -17,11 +17,11 @@ export default ({ children, bg = null, overlay = false }) => (
 );
 
 export const TextHeading = ({ children }) => (
-  <ScrollAnimation animateIn="fadeInUp" animateOnce className="row">
+  <div className="row">
     <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
       {children}
     </div>
-  </ScrollAnimation>
+  </div>
 );
 
 export const TextContent = ({ children }) => (
