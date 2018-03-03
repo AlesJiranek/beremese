@@ -7,7 +7,9 @@ export default ({ children, bg = null, overlay = false }) => (
     className="fh5co-bg"
     style={bg ? { backgroundImage: `url("${bg}")` } : {}}
   >
-    {overlay && <div className="overlay" />}
+    {overlay && (
+      <div className="overlay" style={{ background: `rgba(0,0,0,0.04)` }} />
+    )}
     <div className="container">
       <div className="row">{children}</div>
     </div>

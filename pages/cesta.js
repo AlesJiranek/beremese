@@ -7,7 +7,11 @@ import Map from '../components/Map';
 
 const Route = () => (
   <Page>
-    <Header backgroundImage="/static/images/img_bg_1.jpg" small>
+    <Header
+      backgroundImage="/static/images/on-the-road-7-1384791.jpg"
+      small
+      overlay={0.1}
+    >
       <h1>Cesta za námi</h1>
     </Header>
     <Text>
@@ -27,15 +31,16 @@ const Route = () => (
         </blockquote>
       </TextContent>
     </Text>
-    <Text bg="/static/images/img_bg_4.jpg" overlay>
+    <Map />
+    <Text overlay>
       <TextHeading>
         <span>Souřadnice</span>
-        <h2 style={{ color: '#fff' }}>Kde přesně se mlýn nachází?</h2>
+        <h2>Kde přesně se mlýn nachází?</h2>
       </TextHeading>
       <TextContent>
         <h4>Adresa</h4>
         <blockquote>
-          <address style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+          <address>
             Penzion Mlýn Kamenice<br />
             Klučenice - Kamenice 4<br />
             Krásná Hora nad Vltavou<br />
@@ -45,25 +50,18 @@ const Route = () => (
         </blockquote>
         <h4>GPS Souřadnice</h4>
         <blockquote>
-          <address style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
-            49°33'8.763"N, 14°11'26.168"E
-          </address>
+          <address>49°33'8.763"N, 14°11'26.168"E</address>
         </blockquote>
         <h4>Plus Code</h4>
         <blockquote>
-          <address style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
-            H53R+23
-          </address>
+          <address>H53R+23</address>
         </blockquote>
         <h4>S-JTSK / Krovak</h4>
         <blockquote>
-          <address style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
-            Y=767460.34 X=1099654.95
-          </address>
+          <address>Y=767460.34 X=1099654.95</address>
         </blockquote>
       </TextContent>
     </Text>
-    <Map />
   </Page>
 );
 

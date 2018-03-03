@@ -1,12 +1,12 @@
-import React from "react";
-import Page from "../components/Page";
-import Header from "../components/Header";
-import Text, { TextHeading, TextContent } from "../components/Text";
-import PropTypes from "prop-types";
+import React from 'react';
+import Page from '../components/Page';
+import Header from '../components/Header';
+import Text, { TextHeading, TextContent } from '../components/Text';
+import PropTypes from 'prop-types';
 
 const Accomodation = () => (
   <Page>
-    <Header backgroundImage="/static/images/img_bg_1.jpg" small>
+    <Header backgroundImage="/static/images/prisla_noc.jpg" small overlay={0.1}>
       <h1>Příjezd a ubytování</h1>
     </Header>
     <Text>
@@ -35,27 +35,27 @@ const Accomodation = () => (
         </blockquote>
       </TextContent>
     </Text>
-    <Text bg="/static/images/img_bg_4.jpg" overlay>
+    <Text overlay>
       <TextHeading>
         <span>Ubytování</span>
-        <h2 style={{ color: "#fff" }}>Kde složíme hlavy?</h2>
+        <h2>Kde složíme hlavy?</h2>
       </TextHeading>
       <TextContent>
         <blockquote>
-          <p style={{ color: "rgba(255, 255, 255, 0.8)" }}>
+          <p>
             Místo konání našeho dne nás opravdu očarovalo. Doufáme tedy, že i vy
             se zde budete cítit krásně. Vybrali jsme malou vesničku s menším
             mlýnem uprostřed přírody na Orlíku, kde je vše co bude na naše
             veselí třeba. Vše proběhne na jednom místě,<br />od obřadu, přes
             oslavu až po nedělení snídani.
           </p>
-          <p style={{ color: "rgba(255, 255, 255, 0.8)" }}>
+          <p>
             Součástí mlýna je možnost ubytování za 495 Kč za osobu, včetně
             nedělní snídaně v podobě švédských stolů. Počítáme s tím, že se
             všichni zdržíte až do nedělního rána. Kdyby někdo neměl o ubytování
             <br />zájem, dejte nám prosím vědět co nejdříve.
           </p>
-          <p style={{ color: "rgba(255, 255, 255, 0.8)" }}>
+          <p>
             Jenom malé upozornění, na místě není možné platit kartami, pouze v
             hotovosti.
           </p>
