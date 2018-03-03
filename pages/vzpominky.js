@@ -1,12 +1,12 @@
-import React from "react";
-import Page from "../components/Page";
-import Header from "../components/Header";
-import Text, { TextHeading, TextContent } from "../components/Text";
-import PropTypes from "prop-types";
+import React from 'react';
+import Page from '../components/Page';
+import Header from '../components/Header';
+import Text, { TextHeading, TextContent } from '../components/Text';
+import PropTypes from 'prop-types';
 
 const Clothing = () => (
   <Page>
-    <Header backgroundImage="/static/images/img_bg_1.jpg" small>
+    <Header backgroundImage="/static/images/img_4833.jpg" small overlay={0.05}>
       <h1>Vzpomínky</h1>
     </Header>
     <Text>

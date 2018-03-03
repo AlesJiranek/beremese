@@ -1,5 +1,5 @@
-import React from "react";
-import ScrollAnimation from "../lib/ScrollAnimation";
+import React from 'react';
+import ScrollAnimation from '../lib/ScrollAnimation';
 
 const Couple = () => (
   <div id="fh5co-couple">
@@ -27,7 +27,7 @@ const Couple = () => (
         <div className="couple-half">
           <div className="groom">
             <img
-              src="/static/images/groom.jpg"
+              src="/static/images/r.jpg"
               alt="groom"
               className="img-responsive"
             />
@@ -47,7 +47,7 @@ const Couple = () => (
         <div className="couple-half">
           <div className="bride">
             <img
-              src="/static/images/bride.jpg"
+              src="/static/images/a.jpg"
               alt="groom"
               className="img-responsive"
             />
