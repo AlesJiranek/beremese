@@ -1,0 +1,6 @@
+
+          window.__NEXT_REGISTER_PAGE('/vzpominky', function() {
+            var comp = module.exports=webpackJsonp([6],{445:function(e,t,l){e.exports=l(446)},446:function(e,t,l){"use strict";function a(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var n=l(0),u=a(n),r=l(48),o=a(r),d=l(49),m=a(d),f=l(68),c=a(f),i=l(3),s=(a(i),function(){return u.default.createElement(o.default,null,u.default.createElement(m.default,{backgroundImage:"/static/images/img_4823-small.jpg",small:!0,overlay:.1},u.default.createElement("h1",null,"Vzpomínky")),u.default.createElement(c.default,null,u.default.createElement(f.TextHeading,null,u.default.createElement("span",null,"Fotogalerie"),u.default.createElement("h2",null,"Jak jsme si to užili?")),u.default.createElement(f.TextContent,null,u.default.createElement("blockquote",null,u.default.createElement("p",null,"Naše svatba zatím ještě neproběhla, takže ještě není na co vzpomínat! Jakmile ale budeme mít nějaké fotografie, najdete je právě tady.")))))});t.default=s}},[445]);
+            return { page: comp.default }
+          })
+        
