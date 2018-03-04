@@ -1,12 +1,16 @@
-import React from "react";
-import Page from "../components/Page";
-import Header from "../components/Header";
-import Text, { TextHeading, TextContent } from "../components/Text";
-import PropTypes from "prop-types";
+import React from 'react';
+import Page from '../components/Page';
+import Header from '../components/Header';
+import Text, { TextHeading, TextContent } from '../components/Text';
+import PropTypes from 'prop-types';
 
 const Gifts = () => (
   <Page>
-    <Header backgroundImage="/static/images/img_bg_1.jpg" small>
+    <Header
+      backgroundImage="/static/images/img_4823-small.jpg"
+      small
+      overlay={0.1}
+    >
       <h1>Dary</h1>
     </Header>
     <Text>

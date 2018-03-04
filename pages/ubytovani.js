@@ -6,7 +6,11 @@ import PropTypes from 'prop-types';
 
 const Accomodation = () => (
   <Page>
-    <Header backgroundImage="/static/images/prisla_noc.jpg" small overlay={0.1}>
+    <Header
+      backgroundImage="/static/images/img_4823-small.jpg"
+      small
+      overlay={0.1}
+    >
       <h1>Příjezd a ubytování</h1>
     </Header>
     <Text>

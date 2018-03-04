@@ -6,7 +6,11 @@ import PropTypes from 'prop-types';
 
 const Clothing = () => (
   <Page>
-    <Header backgroundImage="/static/images/img_4833.jpg" small overlay={0.05}>
+    <Header
+      backgroundImage="/static/images/img_4823-small.jpg"
+      small
+      overlay={0.1}
+    >
       <h1>Vzpomínky</h1>
     </Header>
     <Text>

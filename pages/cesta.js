@@ -8,7 +8,7 @@ import Map from '../components/Map';
 const Route = () => (
   <Page>
     <Header
-      backgroundImage="/static/images/on-the-road-7-1384791.jpg"
+      backgroundImage="/static/images/img_4823-small.jpg"
       small
       overlay={0.1}
     >
