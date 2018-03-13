@@ -315,6 +315,7 @@ figure {
   height: 900px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   width: 100%;
 }
