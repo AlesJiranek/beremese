@@ -141,7 +141,7 @@ const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 export default () => (
   <WrappedMap
-    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&libraries=places"
+    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-Kiz9QS-I4QdNb78n9dOfxPO1VKL6Ghg&libraries=places"
     loadingElement={<div style={{ height: `500px` }} className="loader" />}
     containerElement={
       <div
