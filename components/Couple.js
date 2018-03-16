@@ -34,11 +34,6 @@ const Couple = () => (
           </div>
           <div className="desc-groom">
             <h3>Renča Schimmerová</h3>
-            <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove
-            </p>
           </div>
         </div>
         <p className="heart text-center">
@@ -54,11 +49,6 @@ const Couple = () => (
           </div>
           <div className="desc-bride">
             <h3>Aleš Jiránek</h3>
-            <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove
-            </p>
           </div>
         </div>
       </ScrollAnimation>

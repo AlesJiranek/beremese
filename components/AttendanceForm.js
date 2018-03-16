@@ -1,11 +1,11 @@
-import React from "react";
-import ScrollAnimation from "../lib/ScrollAnimation";
+import React from 'react';
+import ScrollAnimation from '../lib/ScrollAnimation';
 
 const AttendanceForm = () => (
   <div
     id="fh5co-started"
     className="fh5co-bg"
-    style={{ backgroundImage: "url(/static/images/img_bg_4.jpg)" }}
+    style={{ backgroundImage: 'url(/static/images/on-the-road-7-1384791.jpg)' }}
   >
     <div className="overlay" />
     <div className="container">
@@ -16,7 +16,9 @@ const AttendanceForm = () => (
           animateOnce
         >
           <h2>Přijedete za námi?</h2>
-          <p>Dejte nám prosím vědět, že s vámi můžeme počítat. Děkujeme.</p>
+          <p style={{ color: 'rgba(255,255,255,0.9)' }}>
+            Dejte nám prosím vědět, že s vámi můžeme počítat. Děkujeme.
+          </p>
         </ScrollAnimation>
       </div>
       <ScrollAnimation
@@ -66,7 +68,7 @@ const AttendanceForm = () => (
           animateIn="fadeInUp"
           animateOnce
         >
-          <p>
+          <p style={{ color: 'rgba(255,255,255,0.9)' }}>
             Kdybyste nějaké informace postrádali, nebo jste měli jakýkoli dotaz,
             ozvěte se nevěstě nebo ženichovi. V den svatby bychom ale velmi
             ocenili, kdybyste se už obraceli pouze na naši zlatou pravou ruku

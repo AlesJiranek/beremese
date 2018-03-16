@@ -30,7 +30,7 @@ const Gifts = () => (
             potřeba, neboť si myslíme, že všeho máme dost. Pokud i přesto na
             nějakém daru trváte, oceníme spíše příspěvek na naše další společné
             cesty za dobrodružstvím. Uvidíme co zvítězí, prosluněná cesta na
-            Honolulu nebo expedice v Himalájích.
+            Honolulu nebo expedice v Himalájích?
           </p>
         </blockquote>
       </TextContent>

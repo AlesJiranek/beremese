@@ -1,11 +1,11 @@
-import React from "react";
-import ScrollAnimation from "../lib/ScrollAnimation";
+import React from 'react';
+import ScrollAnimation from '../lib/ScrollAnimation';
 
 const Event = () => (
   <div
     id="fh5co-event"
     className="fh5co-bg"
-    style={{ backgroundImage: "url(/static/images/img_bg_3.jpg)" }}
+    style={{ backgroundImage: 'url(/static/images/large__DSC1371-print.jpg)' }}
   >
     <div className="overlay" />
     <div className="container">

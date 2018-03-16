@@ -1,5 +1,5 @@
-import React from "react";
-import ScrollAnimation from "../lib/ScrollAnimation";
+import React from 'react';
+import ScrollAnimation from '../lib/ScrollAnimation';
 
 const Story = () => (
   <div id="fh5co-couple-story">
@@ -25,7 +25,7 @@ const Story = () => (
             <ScrollAnimation animateIn="fadeInUp" animateOnce component="li">
               <div
                 className="timeline-badge"
-                style={{ backgroundImage: "url(/static/images/couple-1.jpg)" }}
+                style={{ backgroundImage: 'url(/static/images/proudy.jpg)' }}
               />
               <div className="timeline-panel">
                 <div className="timeline-heading">
@@ -34,11 +34,12 @@ const Story = () => (
                 </div>
                 <div className="timeline-body">
                   <p>
-                    Festival Proudy 2012 Far far away, behind the word
-                    mountains, far from the countries Vokalia and Consonantia,
-                    there live the blind texts. Separated they live in
-                    Bookmarksgrove right at the coast of the Semantics, a large
-                    language ocean.
+                    Za prvním našim setkáním stojí naše společná kamarádka
+                    Nikča. Nikča naprosto přesvědčená o tom, že k sobě přeci
+                    jasně patříme! Oba jsme se vzájemného setkání dlouho
+                    zdráhali, protože nikdo přeci nechce být dohazován.
+                    Každopádně za půl roku jsme se osobně poznali při
+                    příležitosti kolejního festivalu.
                   </p>
                 </div>
               </div>
@@ -51,19 +52,20 @@ const Story = () => (
             >
               <div
                 className="timeline-badge"
-                style={{ backgroundImage: "url(/static/images/couple-2.jpg)" }}
+                style={{ backgroundImage: 'url(/static/images/IMG_0769.jpg)' }}
               />
               <div className="timeline-panel">
                 <div className="timeline-heading">
-                  <h3 className="timeline-title">First Date</h3>
-                  <span className="date">December 28, 2015</span>
+                  <h3 className="timeline-title">První tanec</h3>
+                  <span className="date">20. února, 2014</span>
                 </div>
                 <div className="timeline-body">
                   <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.
+                    Hádejte kdo za to opět mohl! O rok a půl později jsme byli
+                    oba pozváni na Nikčy narozeniny. Ano, a byla to ta stejná
+                    Nikča. Na začátku jsme se sobě vyhýbali, pak ale Aleš málem
+                    rozlil pivo, najednou mě vyzval k tanci a ten to všechno
+                    rozhodl.
                   </p>
                 </div>
               </div>
@@ -71,19 +73,26 @@ const Story = () => (
             <ScrollAnimation animateIn="fadeInUp" animateOnce component="li">
               <div
                 className="timeline-badge"
-                style={{ backgroundImage: "url(/static/images/couple-3.jpg)" }}
+                style={{
+                  backgroundImage:
+                    'url(/static/images/vK1o5rZGqxyovfIhZyMELhk03wO.jpg)'
+                }}
               />
               <div className="timeline-panel">
                 <div className="timeline-heading">
-                  <h3 className="timeline-title">In A Relationship</h3>
-                  <span className="date">January 1, 2016</span>
+                  <h3 className="timeline-title">První rande</h3>
+                  <span className="date">7. března, 2014</span>
                 </div>
                 <div className="timeline-body">
                   <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.
+                    Oťukávání to bylo vskutku veselé. Kino na které se Aleš
+                    doslova vřítil na poslední chvíli, Renči držkopády na
+                    bruslích, po kterých se loučila s Alešem s krvavýma rukama a
+                    roztrhanýma legínama na zadku. Až naše první dětská pusa,
+                    která proběhla v metru na Vyšehradě, kdy se Aleš odhodlal a
+                    než si to Renča uvědomila, tak se vypařil. A pak se málem
+                    hanbou propadla, protože celý vagón slyšel ten děsný velký
+                    mlask.
                   </p>
                 </div>
               </div>
@@ -96,19 +105,22 @@ const Story = () => (
             >
               <div
                 className="timeline-badge"
-                style={{ backgroundImage: "url(/static/images/couple-2.jpg)" }}
+                style={{
+                  backgroundImage:
+                    'url(/static/images/18261330_10212101081629791_2020012277_o.jpg)'
+                }}
               />
               <div className="timeline-panel">
                 <div className="timeline-heading">
-                  <h3 className="timeline-title">First Date</h3>
-                  <span className="date">December 28, 2015</span>
+                  <h3 className="timeline-title">Naše svatba</h3>
+                  <span className="date">16. června, 2018</span>
                 </div>
                 <div className="timeline-body">
                   <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean.
+                    A pak už jsme prožili již skvělé čtyři roky srandy, která
+                    nám doufáme vydrží napořád! Samozřejmě také zásluhou našich
+                    skvělých rodičů a kamarádů! Nemůžeme se dočkat svatby, kde
+                    Vás všechny budeme mít.
                   </p>
                 </div>
               </div>

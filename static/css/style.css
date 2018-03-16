@@ -1159,6 +1159,11 @@ form label {
   }
 }
 
+.couple-half .desc-groom h3,
+.couple-half .desc-bride h3 {
+  margin-top: 60px;
+}
+
 .feature-center {
   text-align: center;
   padding-left: 20px;
