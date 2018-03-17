@@ -21,7 +21,7 @@ const Accomodation = () => (
       <TextContent>
         <blockquote>
           <p>
-            Tak a&nbsp;je tu náš den D, konec příprav a zařízování! Jde do
+            Tak a&nbsp;je tu náš den D, konec příprav a zařizování! Jde do
             tuhého! Doufáme, že jste připraveni stejně tak dobře jako my.
           </p>
           <p>
@@ -30,7 +30,7 @@ const Accomodation = () => (
             k ubytování budou již od rána připraveny. Bude tedy možnost se
             v klidu na obřad převléknout či upravit. Nemějte obavy, že byste
             byli o&nbsp;hladu. Před obřadem bude přichystáno menší občerstvení,
-            které Vám rád nabídne ženich nevěsty.
+            které Vám rád nabídne ženich.
           </p>
           <p>
             Možná zajímavost pro dámy, celé dopoledne bude na místě k dispozici
@@ -61,8 +61,8 @@ const Accomodation = () => (
             co&nbsp;nejdříve.
           </p>
           <p>
-            Jenom malé upozornění, na místě není možné platit kartami, pouze v
-            hotovosti.
+            Jenom malé upozornění, na místě není možné použít platební karty, pouze 
+            hotovost.
           </p>
         </blockquote>
       </TextContent>
