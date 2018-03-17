@@ -69,10 +69,10 @@ const AttendanceForm = () => (
           animateOnce
         >
           <p style={{ color: 'rgba(255,255,255,0.9)' }}>
-            Kdybyste nějaké informace postrádali, nebo jste měli jakýkoli dotaz,
+            Kdybyste nějaké informace postrádali nebo měli jakýkoli dotaz,
             ozvěte se nevěstě nebo ženichovi. V den svatby bychom ale velmi
             ocenili, kdybyste se už obraceli pouze na naši zlatou pravou ruku
-            Lucku Klocovou.&nbsp;
+            <strong> Lucku Klocovou</strong>.&nbsp;
             <small>
               <abbr>Tel.</abbr> <tel>+420 773 911 319</tel>
             </small>

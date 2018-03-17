@@ -25,12 +25,12 @@ const Gifts = () => (
             stejně jako případné ubytování, není třeba žádných velkých darů.
           </p>
           <p>
-            Největším darem pro nás bude, že s námi strávíte náš den! A toho si
-            opravdu vážíme! Žádné vázy, jídelní soupravy ani mixéry nejsou
-            potřeba, neboť si myslíme, že všeho máme dost. Pokud i přesto na
-            nějakém daru trváte, oceníme spíše příspěvek na naše další společné
-            cesty za dobrodružstvím. Uvidíme co zvítězí, prosluněná cesta na
-            Honolulu nebo expedice v Himalájích?
+            Největším darem pro nás bude, že s námi strávíte náš den!
+            A&nbsp;toho si opravdu vážíme! Žádné vázy, jídelní soupravy ani
+            mixéry nejsou potřeba, neboť si myslíme, že všeho máme dost. Pokud
+            i&nbsp;přesto na nějakém daru trváte, oceníme spíše příspěvek na
+            naše další společné cesty za dobrodružstvím. Uvidíme co zvítězí,
+            prosluněná cesta na Honolulu nebo expedice v Himalájích?
           </p>
         </blockquote>
       </TextContent>

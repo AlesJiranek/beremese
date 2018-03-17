@@ -13,10 +13,10 @@ const Couple = () => (
           <h2>Vítejte na naší svatbě!</h2>
           <p>
             Naši nejbližší a nejmilejší, jak už všichni víte, třetí červnová
-            sobota bude naším velkým dnem, který bychom si přáli prožít a
-            oslavit s vámi.
+            sobota bude naším velkým dnem, který bychom si přáli prožít
+            a&nbsp;oslavit s vámi.
           </p>
-          <h3>16.6.2018 Mlýn Kamenice - Klučenice, Česká republika</h3>
+          <h3>16. 6. 2018 Mlýn Kamenice - Klučenice, Česká republika</h3>
         </ScrollAnimation>
       </div>
       <ScrollAnimation

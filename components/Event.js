@@ -41,10 +41,11 @@ const Event = () => (
                     <span>16. Červen</span>
                   </div>
                   <p>
-                    To nejdůležitější, a vlastně důvod našeho setkání, je říci
-                    si své ano! Obřad proběhne<br />ve 13 hodin v blízkosti
-                    mlýna, ve kterém bude poté i svatební oslava. Netřeba tak
-                    velkého přesouvání, všude dojdeme po svých.
+                    To nejdůležitější, a&nbsp;vlastně důvod našeho setkání, je
+                    říci si své ano! Obřad proběhne<br />ve 13 hodin
+                    v&nbsp;blízkosti mlýna, ve kterém bude poté i&nbsp;svatební
+                    oslava. Netřeba tak velkého přesouvání, všude dojdeme po
+                    svých.
                   </p>
                 </ScrollAnimation>
               </div>
@@ -66,7 +67,7 @@ const Event = () => (
                     <span>16. Červen</span>
                   </div>
                   <p>
-                    Aby naše láska trvala věčnost, chtěli bychom se s vámi
+                    Aby naše láska trvala věčnost, chtěli bychom se s&nbsp;vámi
                     veselit po zbytek celého dne tak, aby se na náš den navždy
                     vzpomínalo! Párty bude zahájena v 17 hodin naším prvním
                     tancem a pak už se jen bude pít a hodovat.

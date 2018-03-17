@@ -23,9 +23,9 @@ const Route = () => (
         <blockquote>
           <p>
             Dopravit za námi se můžete všemi možnými způsoby - autobusem, vlakem
-            i autem. Nejjednodušší cesta je ale určitě autem. Pokud nemáte auto
-            vlastní nebo ho<br />z nějakého důvodu nemůžete vzít, dejte nám
-            vědět a my vám domluvíme dopravu s někým, kdo bude mít auto
+            i&nbsp;autem. Nejjednodušší cesta je ale určitě autem. Pokud nemáte
+            auto vlastní nebo ho z&nbsp;nějakého důvodu nemůžete vzít, dejte nám
+            vědět a&nbsp;my vám domluvíme dopravu s někým, kdo bude mít auto
             dostupné.
           </p>
         </blockquote>
