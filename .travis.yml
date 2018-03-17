@@ -3,8 +3,11 @@ node_js:
 - stable
 
 script: bash ./deploy.sh
-env:
-  global:
-  - COMMIT_AUTHOR_EMAIL: "a.jiranek@gmail.com"
-  - ENCRYPTION_LABEL: "7411a64e69e8"
-
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: out
+  on:
+    branch: master
