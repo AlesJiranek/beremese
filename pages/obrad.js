@@ -21,7 +21,7 @@ const Clothing = () => (
       <TextContent>
         <blockquote>
           <p>
-            Obřad bude probíhat od 13 hodin v těsné blízkosti mlýna. Snad jediné
+            Obřad bude probíhat od 13 hodin v těsné blízkosti mlýna. Snad jediné,
             co prosím berte na vědomí je, že&nbsp;naše ano si řekneme v přírodě,
             nejspíše na trávě, a&nbsp;proto dámy zvažte vhodnou obuv a jehly
             nechte doma.
@@ -34,7 +34,7 @@ const Clothing = () => (
           </p>
           <p>
             Nejsme příznivci publikování svateb na sociální sítě. Pokud však
-            během večera pořídíte nějaké fotografie o&nbsp;které byste se s námi
+            během večera pořídíte nějaké fotografie, o&nbsp;které byste se s námi
             chtěli podělit, bude pro tyto účely možnost nahrát tyto fotografie
             na náš web.
           </p>
