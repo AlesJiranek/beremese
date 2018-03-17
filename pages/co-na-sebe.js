@@ -22,13 +22,13 @@ const Clothing = () => (
         <blockquote>
           <p>
             Nelámejte si hlavu s tím, co si vzít na sebe! Chceme, abyste se
-            cítili uvolněně a&nbsp;příjemně. Takže dámy, letní šatičky, sukýnky
-            a&nbsp;jehly nechte doma. Páni to mají asi jasné, protože fešná bílá
+            cítili uvolněně a&nbsp;příjemně. Takže dámy, letní šatičky, sukýnky,
+            ale jehly doporučujeme nechat doma. Páni to mají asi jasné, protože fešná bílá
             nebo světlá košile s&nbsp;kalhotami sluší moc každému. Pokud
-            nechcete nechat ženicha ve štychu můžete k&nbsp;outfitu přidat
-            motýlka či šle, fanzatii se meze se nekladou. Jediné, o&nbsp;co
+            nechcete nechat ženicha ve štychu, můžete k&nbsp;outfitu přidat
+            motýlka či šle, fantazii se meze se nekladou. Jediné, o&nbsp;co
             bychom Vás chtěli poprosit, nechte rifle doma, sami je milujeme, ale
-            nechceme aby byla riflovina<br />
+            nechceme, aby byla riflovina<br />
             na všech fotkách. Ležérnímu stylu palec hore.
           </p>
           <p>
