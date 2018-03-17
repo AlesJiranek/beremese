@@ -11,6 +11,15 @@ const Footer = () => (
               vyhrazena.
             </small>
             <small className="block">
+              Našli jste nějakou chybu? Pošlete nám{' '}
+              <a
+                href="https://github.com/AlesJiranek/beremese/pulls"
+                target="_blank"
+              >
+                pull request
+              </a>!
+            </small>
+            <small className="block">
               Designed by{' '}
               <a href="http://freehtml5.co/" target="_blank">
                 FREEHTML5.co
