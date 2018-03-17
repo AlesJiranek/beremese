@@ -15,7 +15,7 @@ const Gifts = () => (
     </Header>
     <Text>
       <TextHeading>
-        <span>Laskavoti</span>
+        <span>Laskavosti</span>
         <h2>Čím nás můžete obdarovat?</h2>
       </TextHeading>
       <TextContent>
