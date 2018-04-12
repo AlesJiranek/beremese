@@ -17,7 +17,7 @@ export default () => (
     />
     <meta name="author" content="Aleš Jiránek" />
     <link
-      href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700"
+      href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700&subset=latin,latin-ext"
       rel="stylesheet"
       type="text/css"
     />
