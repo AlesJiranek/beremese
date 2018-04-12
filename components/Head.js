@@ -22,7 +22,7 @@ export default () => (
       type="text/css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Sacramento&subset=latin-ext"
+      href="https://fonts.googleapis.com/css?family=Sacramento&subset=latin,latin-ext"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/static/css/animate.css" />
