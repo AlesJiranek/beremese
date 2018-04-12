@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build && next export && cp _headers ./out/_headers",
     "start": "next start"
   },
   "devDependencies": {}
