@@ -6,11 +6,7 @@ import PropTypes from 'prop-types';
 
 const Accomodation = () => (
   <Page>
-    <Header
-      backgroundImage="/static/images/img_4823-small.jpg"
-      small
-      overlay={0.1}
-    >
+    <Header small overlay={0.1}>
       <h1>Příjezd a ubytování</h1>
     </Header>
     <Text>
@@ -61,8 +57,8 @@ const Accomodation = () => (
             co&nbsp;nejdříve.
           </p>
           <p>
-            Jenom malé upozornění, na místě není možné použít platební karty, pouze 
-            hotovost.
+            Jenom malé upozornění, na místě není možné použít platební karty,
+            pouze hotovost.
           </p>
         </blockquote>
       </TextContent>

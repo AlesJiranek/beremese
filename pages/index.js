@@ -11,7 +11,7 @@ import Map from '../components/Map';
 
 const Index = () => (
   <Page>
-    <Header backgroundImage="/static/images/img_4823.jpg" overlay={0.1}>
+    <Header overlay={0.1}>
       <h1>Renča &amp; Aleš</h1>
       <h2>Chtějí všem na vědomí dát, že se z lásky budou brát za...</h2>
       <Countdown date="2018-06-16" />

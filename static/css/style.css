@@ -318,6 +318,7 @@ figure {
   background-position: center;
   position: relative;
   width: 100%;
+  background-image: url('/static/images/img_4823.jpg');
 }
 .fh5co-cover .overlay {
   z-index: 0;
@@ -351,6 +352,7 @@ figure {
 }
 .fh5co-cover.fh5co-cover-sm {
   height: 600px;
+  background-image: url('/static/images/img_4823-small.jpg');
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover.fh5co-cover-sm {

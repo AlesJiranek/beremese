@@ -11,7 +11,6 @@ const Header = ({
     id="fh5co-header"
     className={`fh5co-cover${small ? ' fh5co-cover-sm' : ''}`}
     role="banner"
-    style={{ backgroundImage: `url(${backgroundImage})` }}
   >
     <div className="overlay" style={{ background: `rgba(0,0,0,${overlay})` }} />
     <div className="container">

@@ -6,11 +6,7 @@ import PropTypes from 'prop-types';
 
 const Clothing = () => (
   <Page>
-    <Header
-      backgroundImage="/static/images/img_4823-small.jpg"
-      small
-      overlay={0.1}
-    >
+    <Header small overlay={0.1}>
       <h1>Obřad</h1>
     </Header>
     <Text>
@@ -21,10 +17,10 @@ const Clothing = () => (
       <TextContent>
         <blockquote>
           <p>
-            Obřad bude probíhat od 13 hodin v těsné blízkosti mlýna. Snad jediné,
-            co prosím berte na vědomí je, že&nbsp;naše ano si řekneme v přírodě,
-            nejspíše na trávě, a&nbsp;proto dámy zvažte vhodnou obuv a jehly
-            nechte doma.
+            Obřad bude probíhat od 13 hodin v těsné blízkosti mlýna. Snad
+            jediné, co prosím berte na vědomí je, že&nbsp;naše ano si řekneme
+            v přírodě, nejspíše na trávě, a&nbsp;proto dámy zvažte vhodnou obuv
+            a jehly nechte doma.
           </p>
           <p>
             Chtěli bychom vás požádat, abyste během obřadu nefotili ani
@@ -34,9 +30,9 @@ const Clothing = () => (
           </p>
           <p>
             Nejsme příznivci publikování svateb na sociální sítě. Pokud však
-            během večera pořídíte nějaké fotografie, o&nbsp;které byste se s námi
-            chtěli podělit, bude pro tyto účely možnost nahrát tyto fotografie
-            na náš web.
+            během večera pořídíte nějaké fotografie, o&nbsp;které byste se s
+            námi chtěli podělit, bude pro tyto účely možnost nahrát tyto
+            fotografie na náš web.
           </p>
         </blockquote>
       </TextContent>
