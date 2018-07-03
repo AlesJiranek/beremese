@@ -9,10 +9,12 @@
   "private": true,
   "dependencies": {
     "next": "^4.0.1",
-    "react": "16.0.0",
+    "react": "16.4.1",
     "react-animate-on-scroll": "^1.6.0",
-    "react-dom": "16.0.0",
-    "react-google-maps": "^9.4.5"
+    "react-dom": "16.4.1",
+    "react-google-maps": "^9.4.5",
+    "react-images": "^0.5.17",
+    "react-photo-gallery": "^6.0.28"
   },
   "scripts": {
     "dev": "next",

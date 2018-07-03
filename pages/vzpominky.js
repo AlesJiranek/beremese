@@ -3,6 +3,7 @@ import Page from '../components/Page';
 import Header from '../components/Header';
 import Text, { TextHeading, TextContent } from '../components/Text';
 import PropTypes from 'prop-types';
+import PhotoGallery from '../components/PhotoGallery';
 
 const Clothing = () => (
   <Page>
@@ -15,13 +16,7 @@ const Clothing = () => (
         <h2>Jak jsme si to užili?</h2>
       </TextHeading>
       <TextContent>
-        <blockquote>
-          <p>
-            Naše svatba zatím ještě neproběhla, takže ještě není na co
-            vzpomínat! Jakmile ale budeme mít nějaké fotografie, najdete je
-            právě tady.
-          </p>
-        </blockquote>
+        <PhotoGallery />
       </TextContent>
     </Text>
   </Page>

@@ -1,6 +1,5 @@
-import React from "react";
-import Menu from "./Menu";
-const Fragment = React.Fragment;
+import React from 'react';
+import Menu from './Menu';
 
 class MobileNavigation extends React.Component {
   constructor(props) {
@@ -23,7 +22,7 @@ class MobileNavigation extends React.Component {
     return [
       <button
         className={`fh5co-nav-toggle fh5co-nav-white ${
-          isOpened ? "active" : ""
+          isOpened ? 'active' : ''
         }`}
         onClick={this.toggleMenu}
         key="button"
@@ -32,7 +31,7 @@ class MobileNavigation extends React.Component {
       </button>,
       <div
         id="fh5co-offcanvas"
-        className={isOpened ? "active" : ""}
+        className={isOpened ? 'active' : ''}
         key="menu-wrapper"
       >
         <Menu />
