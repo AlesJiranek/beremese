@@ -3,6 +3,18 @@ import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
 import { photos } from './Photos';
 
+const thumbnails = photos.map(image => {
+  const size = 0.25;
+  const height = Math.floor(image.height * size);
+  const width = Math.floor(image.width * size);
+
+  const src = image.src
+    .replace(`w${image.width}`, `w${width}`)
+    .replace(`h${image.height}`, `h${height}`);
+
+  return { src, width, height };
+});
+
 class PhotoGallery extends React.Component {
   constructor(props) {
     super(props);
@@ -10,7 +22,7 @@ class PhotoGallery extends React.Component {
     this.state = {
       index: 0,
       open: false,
-      photos: photos.slice(0, 20)
+      thumbnails: thumbnails.slice(0, 20)
     };
     this.handleScroll = this.handleScroll.bind(this);
     this.loadMorePhotos = this.loadMorePhotos.bind(this);
@@ -31,13 +43,16 @@ class PhotoGallery extends React.Component {
   }
 
   loadMorePhotos() {
-    if (this.state.photos.length >= photos.length) {
+    if (this.state.thumbnails.length >= thumbnails.length) {
       this.setState({ loadedAll: true });
       return;
     }
     this.setState({
-      photos: this.state.photos.concat(
-        photos.slice(this.state.photos.length, this.state.photos.length + 20)
+      thumbnails: this.state.thumbnails.concat(
+        thumbnails.slice(
+          this.state.thumbnails.length,
+          this.state.thumbnails.length + 20
+        )
       )
     });
   }
@@ -65,7 +80,7 @@ class PhotoGallery extends React.Component {
       <React.Fragment>
         <Gallery
           columns={4}
-          photos={this.state.photos}
+          photos={this.state.thumbnails}
           onClick={this.handleClickGallery}
         />
         <Lightbox
